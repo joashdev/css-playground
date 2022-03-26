@@ -1,0 +1,48 @@
+/* Transition */
+* {
+  transition: 300ms linear;
+}
+/* Body */
+body {
+  display: grid;
+  place-content: center;
+  gap: 0.5rem;
+}
+/* Div Elements default properties */
+body :nth-child(1) {
+  width: 2.5rem;
+  height: 0.5rem;
+  border-radius: 50px;
+  background-color: black;
+}
+body :nth-child(2) {
+  width: 2.5rem;
+  height: 0.5rem;
+  border-radius: 50px;
+  background-color: black;
+}
+body :nth-child(3) {
+  width: 2rem;
+  height: 0.5rem;
+  border-radius: 50px;
+  background-color: black;
+}
+
+/* Div Elements on Hover */
+body:hover :nth-child(1) {
+  width: 2.8rem;
+  margin-left: -0.6rem;
+  rotate: calc(-45deg);
+  transform-origin: right;
+}
+body:hover :nth-child(3) {
+  width: 2.8rem;
+  margin-left: -0.6rem;
+  rotate: calc(45deg);
+  transform-origin: right;
+}
+body:hover :nth-child(2) {
+  width: 0rem;
+  margin-left: 1rem;
+  transform-origin: left;
+}
